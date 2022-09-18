@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Image Gallery</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="./images/android-chrome-192x192.png" type="image/png">
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-xl bg-light py-4">
+      <div class="container-fluid px-md-5">
+        <a class="navbar-brand fw-bold md-sm-0 fs-4" href="./index.html">Image <span style="color: rgb(97, 61, 242);">Gallery</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex flex-sm-wrap flex-md-nowrap" role="search">
+            <input type="text" class="form-control me-sm-2 mt-4 mt-md-2" id="search" placeholder="Search your image">
+            <button type="button" id="search-btn" class="btn btn-primary mb-2 mt-4 mt-md-2">Search</button>
+          </form>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+            <li class="nav-item">
+              <a class="nav-link text-black" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="nature" class="nav-link text-black" href="#">Nature</a>
+            </li>
+            <li class="nav-item">
+              <a id="sea" class="nav-link text-black" href="#">Sea</a>
+            </li>
+            <li class="nav-item">
+              <a id="fashion" class="nav-link text-black" href="#">Fashion</a>
+            </li>
+            <li class="nav-item">
+              <a id="technology" class="nav-link text-black" href="#">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a id="food" class="nav-link text-black" href="#">Food</a>
+            </li>
+            <li class="nav-item">
+              <a id="business" class="nav-link text-black" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a id="health" class="nav-link text-black" href="#">Health</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <section class="images">
+        <div
+          class="justify-content-lg-between justify-content-md-center mx-4 align-items-center mt-3 mb-5 gallery-header mb-2">
+          <h3 class="head-title h4 text-center px-md-4 px-lg-0 ">Select image for create slider</h3>
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center justify-content-md-end mb-md-0 px-0 flex-wrap">
+            <input class="form-control" id="duration" placeholder="duration (ms)">
+            <button id="create-slider" class="btn btn-primary d-sm-block d-md-inline">Create slider</button>
+          </div>
+        </div>
+        <div class="row gallery mx-3">
+
+        </div>
+      </section>
+      <!-- slider -->
+      <div class="main">
+        <section class="mt-5" id="sliders">
+
+        </section>
+        <div class="dots d-flex mt-2 w-100 justify-content-center align-items-center bg-light">
+          <span class="dot" onclick="changeItem(-1)"></span>
+          <span class="dot" onclick="changeItem(1)"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Optional JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
